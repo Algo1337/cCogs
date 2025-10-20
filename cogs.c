@@ -96,6 +96,8 @@ fn_t cogs_Destruct(cogs_t cogs)
 			cog_Destruct(cogs->handlers[i]);
 		}
 	}
+
+	free(cogs);
 }
 
 int find_cmd(cogs_t cogs, str cmd)
