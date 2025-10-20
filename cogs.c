@@ -108,15 +108,15 @@ int find_cmd(cogs_t cogs, str cmd)
 	return -1;
 }
 
-void _test_fn() { printf("NIG\n"); }
+// void _test_fn() { printf("NIG\n"); }
 
-int main(int argc, char *argv[])
-{
-	cogs_t cogs = init_cogs();
-	add_cog(cogs, "test", _test_fn);
+// int main(int argc, char *argv[])
+// {
+// 	cogs_t cogs = init_cogs();
+// 	add_cog(cogs, "test", _test_fn);
 
-	int pos = find_cmd(cogs, "test");
-	printf("%d\n", pos);
+// 	int pos = find_cmd(cogs, "test");
+// 	printf("%d\n", pos);
 	
-	((void *(*)())cogs->handlers[pos]->fn)();
-}
+// 	((void *(*)())cogs->handlers[pos]->fn)();
+// }
